@@ -2,8 +2,8 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <section className="flex items-center justify-end text-white px-6 sm:px-10 mt-20">
-      <div className="w-full">
+    <section className="flex flex-col md:flex-row items-center justify-between text-white px-6 sm:px-10 mt-20">
+      <div className="w-full md:w-2/3 text-center md:text-left">
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">
           HI THERE, I'M FELIPE OROPEZA
         </h3>
@@ -15,6 +15,13 @@ const Banner: React.FC = () => {
           for new challenges and opportunities to learn in the world of software
           development.
         </p>
+      </div>
+
+      <div className="w-80 h-80 md:w-[420px] md:h-[420px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-cyan-400 mt-10 md:mt-0 transition-all duration-300">
+        <img
+          src="/images/FelipeCarvalho.jpeg"
+          alt="Felipe Oropeza"
+        />
       </div>
     </section>
   );

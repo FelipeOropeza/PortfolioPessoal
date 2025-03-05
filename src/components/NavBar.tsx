@@ -7,7 +7,6 @@ const Navbar: React.FC = () => {
   return (
     <nav className="text-white py-4 px-6 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
         <span className="text-lg font-semibold">FELIPE OROPEZA</span>
       </div>
 
