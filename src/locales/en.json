@@ -1,0 +1,12 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "button": {
+      "change_language": "Change Language"
+    }
+  }
+  

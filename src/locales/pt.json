@@ -1,0 +1,12 @@
+{
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "button": {
+      "change_language": "Trocar Idioma"
+    }
+  }
+  
