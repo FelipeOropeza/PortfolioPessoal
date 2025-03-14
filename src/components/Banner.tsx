@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">
           HI THERE, I'M FELIPE OROPEZA
         </h3>
-        <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl font-bold text-cyan-400 leading-tight whitespace-normal max-w-full">
+        <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-bold text-cyan-400 leading-tight whitespace-normal max-w-full">
           This is my personal portfolio
         </h1>
         <p className="text-gray-300 mt-6 text-base sm:text-lg md:text-xl">
@@ -17,11 +17,12 @@ const Banner: React.FC = () => {
         </p>
       </div>
 
-      <div className="w-80 h-80 md:w-[420px] md:h-[420px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-cyan-400 mt-10 md:mt-0 transition-all duration-300">
+      <div className="hidden md:block w-40 h-0 md:w-[465px] md:h-[390px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-4 border-cyan-400 mt-10 md:mt-0 transition-all duration-300">
         <img
           src="/images/FelipeCarvalho.jpeg"
           alt="Felipe Oropeza"
-        />
+          className="w-full h-auto"
+          />
       </div>
     </section>
   );
