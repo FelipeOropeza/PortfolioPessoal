@@ -1,0 +1,34 @@
+/* Scroll suave para toda a página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilização e transição para links no nav */
+#nav a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+#nav a:hover {
+  color: #3b82f6; /* Cor azul do Tailwind */
+}
+
+/* Efeito de linha animada abaixo do link */
+#nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+#nav a:hover::after {
+  width: 100%;
+}

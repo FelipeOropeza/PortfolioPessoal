@@ -1,8 +1,12 @@
 import React from "react";
+import "../assets/css/banner.css";
 
 const Banner: React.FC = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between text-white px-6 sm:px-10 mt-20">
+    <section
+      id="banner"
+      className="flex flex-col md:flex-row items-center justify-between text-white px-6 sm:px-10 mt-10"
+    >
       <div className="w-full md:w-2/3 text-center md:text-left">
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">
           HI THERE, I'M FELIPE OROPEZA
@@ -11,9 +15,9 @@ const Banner: React.FC = () => {
           This is my personal portfolio
         </h1>
         <p className="text-gray-300 mt-6 text-base sm:text-lg md:text-xl">
-          I'm a student and a front-end and back-end developer. I'm always looking
-          for new challenges and opportunities to learn in the world of software
-          development.
+          I'm a student and a front-end and back-end developer. I'm always
+          looking for new challenges and opportunities to learn in the world of
+          software development.
         </p>
       </div>
 
@@ -22,7 +26,7 @@ const Banner: React.FC = () => {
           src="/images/FelipeCarvalho.jpeg"
           alt="Felipe Oropeza"
           className="w-full h-auto"
-          />
+        />
       </div>
     </section>
   );

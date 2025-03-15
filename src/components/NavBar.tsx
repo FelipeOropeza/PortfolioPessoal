@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import "../assets/css/nav.css";
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -20,7 +21,7 @@ const Navbar: React.FC = () => {
 
       <ul className="hidden md:flex gap-6 text-sm font-medium items-center">
         <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-        <li className="hover:underline cursor-pointer">{t("nav.about")}</li>
+        <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
         <li className="hover:underline cursor-pointer">{t("nav.projects")}</li>
         <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
         <li>
