@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import "../assets/css/about.css";
 
 const About: React.FC = () => {
   const [currentBlock, setCurrentBlock] = useState(0);
+  const { t } = useTranslation();
 
   const blocks = [
     {
@@ -64,36 +66,22 @@ const About: React.FC = () => {
           <div className="w-20 h-1 bg-sky-500 mx-auto rounded-full mb-8"></div>
         </div>
 
-        <div className="space-y-6 text-justify mb-16">
+        <div
+          id="about-text"
+          className="space-y-6 mb-16 text-left md:text-justify"
+        >
           <p className="text-lg leading-relaxed text-white">
-            Hello! I'm{" "}
-            <span className="font-semibold text-sky-400">Felipe Oropeza</span>,
-            a passionate <span className="font-semibold">developer</span> with
-            experience in{" "}
-            <span className="font-semibold">
-              back-end and front-end development
+            {t("about.greeting")}{" "}
+            <span className="font-semibold text-sky-400">
+              {t("about.name")}{" "}
             </span>
-            . I work with technologies like{" "}
-            <span className="font-semibold">
-              PHP, JavaScript, TypeScript, C#, and Java
-            </span>
-            , and I am also improving my front-end skills with{" "}
-            <span className="font-semibold">React</span>. I have a strong
-            interest in{" "}
-            <span className="font-semibold">web development and databases</span>
-            .
+            {t("about.description")}{" "}
+            <span className="font-semibold">{t("about.technologies")} </span>
+            <span className="font-semibold"> {t("about.interests")} </span>.
           </p>
 
           <p className="text-lg leading-relaxed text-white">
-            I am currently studying{" "}
-            <span className="font-semibold">
-              Analysis and Systems Development
-            </span>
-            and looking for an{" "}
-            <span className="font-semibold">
-              internship or a junior developer position
-            </span>
-            to apply my knowledge and grow professionally.
+            <span className="font-semibold">{t("about.opportunity")}</span>
           </p>
         </div>
 
@@ -118,11 +106,11 @@ const About: React.FC = () => {
               {blocks[currentBlock].text}
             </p>
 
-            <div className="flex justify-center items-center space-x-13">
+            <div className="flex flex-wrap justify-center items-center gap-4">
               {blocks[currentBlock].techs.map((tech, index) => (
                 <div
                   key={index}
-                  className="tech-item flex justify-center items-center"
+                  className="tech-item flex justify-center items-center w-1/3 sm:w-1/4 md:w-1/5 lg:w-auto"
                 >
                   <img
                     src={`images/${tech}`}

@@ -24,7 +24,7 @@ const Banner: React.FC = () => {
 
       <div className="hidden md:block w-40 h-0 md:w-[465px] md:h-[390px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-4 border-cyan-400 mt-10 md:mt-0 transition-all duration-300">
         <img
-          src={'images/FelipeCarvalho.svg'}
+          src={'images/FelipeCarvalho.jpeg'}
           alt="Felipe Oropeza"
           className="w-full h-auto"
         />

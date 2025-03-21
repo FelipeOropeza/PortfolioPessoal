@@ -1,6 +1,11 @@
-#tech-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10vh;
+#tech-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vh;
+}
+
+#about-text p {
+  word-wrap: break-word;
+  word-spacing: normal; /* Controla o espaçamento entre as palavras */
 }

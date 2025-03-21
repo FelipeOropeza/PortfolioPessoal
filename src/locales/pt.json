@@ -6,11 +6,19 @@
     "contact": "Contato"
   },
   "button": {
-    "change_language": "Trocar Idioma"
+    "change_language": "Mudar Idioma"
   },
   "banner": {
     "greeting": "OLÁ, EU SOU FELIPE OROPEZA",
     "title": "Este é o meu portfólio pessoal",
-    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre em busca de novos desafios e oportunidades para aprender no mundo do desenvolvimento de software."
+    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre buscando novos desafios e oportunidades para aprender no mundo do desenvolvimento de software."
+  },
+  "about": {
+    "greeting": "Olá! Eu sou",
+    "name": "Felipe Oropeza",
+    "description": "um desenvolvedor apaixonado com experiência em desenvolvimento back-end e front-end.",
+    "technologies": "Trabalho com tecnologias como PHP, JavaScript, TypeScript, C# e Java, e também estou aprimorando minhas habilidades de front-end com React.",
+    "interests": "Tenho um grande interesse em desenvolvimento web e bancos de dados.",
+    "opportunity": "Atualmente estou estudando Análise e Desenvolvimento de Sistemas e estou procurando um estágio ou uma posição de desenvolvedor júnior para aplicar meu conhecimento e crescer profissionalmente."
   }
 }
