@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         <span className="text-lg font-semibold">FELIPE OROPEZA</span>
       </div>
 
-      <ul className="hidden md:flex gap-6 text-sm font-medium items-center">
+      <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
         <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
         <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
         <li className="hover:underline cursor-pointer">{t("nav.projects")}</li>
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         <li>
           <button
             onClick={toggleLanguage}
-            className="flex items-center text-xl mb-1"
+            className="flex items-center text-xl mb-1 hover:underline cursor-pointer"
           >
             {i18n.language === "en" ? "🇺🇸" : "🇧🇷"}
           </button>
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <ul className="absolute top-16 right-6 w-40 bg-gray-800 text-white text-sm font-medium flex flex-col gap-3 p-4 rounded-lg shadow-lg md:hidden">
           <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-          <li className="hover:underline cursor-pointer">{t("nav.about")}</li>
+          <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
           <li className="hover:underline cursor-pointer">
             {t("nav.projects")}
           </li>
