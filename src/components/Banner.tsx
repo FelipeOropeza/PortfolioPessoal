@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../assets/css/banner.css";
 
 const Banner: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="banner"
@@ -9,15 +12,13 @@ const Banner: React.FC = () => {
     >
       <div className="w-full md:w-2/3 text-center md:text-left">
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">
-          HI THERE, I'M FELIPE OROPEZA
+          {t("banner.greeting")}
         </h3>
         <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-bold text-cyan-400 leading-tight whitespace-normal max-w-full">
-          This is my personal portfolio
+          {t("banner.title")}
         </h1>
         <p className="text-gray-300 mt-6 text-base sm:text-lg md:text-xl">
-          I'm a student and a front-end and back-end developer. I'm always
-          looking for new challenges and opportunities to learn in the world of
-          software development.
+          {t("banner.description")}
         </p>
       </div>
 

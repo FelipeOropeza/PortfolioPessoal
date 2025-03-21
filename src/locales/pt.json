@@ -1,12 +1,16 @@
 {
-    "nav": {
-      "home": "Início",
-      "about": "Sobre",
-      "projects": "Projetos",
-      "contact": "Contato"
-    },
-    "button": {
-      "change_language": "Trocar Idioma"
-    }
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "button": {
+    "change_language": "Trocar Idioma"
+  },
+  "banner": {
+    "greeting": "OLÁ, EU SOU FELIPE OROPEZA",
+    "title": "Este é o meu portfólio pessoal",
+    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre em busca de novos desafios e oportunidades para aprender no mundo do desenvolvimento de software."
   }
-  
+}

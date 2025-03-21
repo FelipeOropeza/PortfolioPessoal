@@ -7,7 +7,6 @@ const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Alternar idioma
   const toggleLanguage = () => {
     const newLanguage = i18n.language === "en" ? "pt" : "en";
     i18n.changeLanguage(newLanguage);

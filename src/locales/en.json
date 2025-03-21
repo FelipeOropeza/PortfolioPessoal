@@ -1,12 +1,16 @@
 {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact"
-    },
-    "button": {
-      "change_language": "Change Language"
-    }
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "button": {
+    "change_language": "Change Language"
+  },
+  "banner": {
+    "greeting": "HI THERE, I'M FELIPE OROPEZA",
+    "title": "This is my personal portfolio",
+    "description": "I'm a student and a front-end and back-end developer. I'm always looking for new challenges and opportunities to learn in the world of software development."
   }
-  
+}
