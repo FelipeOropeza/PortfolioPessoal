@@ -1,0 +1,9 @@
+#project{
+    height: 85vh;
+}
+
+@media (max-width: 768px) { 
+    #banner {
+        height: 45vh;
+    }
+}
