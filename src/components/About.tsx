@@ -57,7 +57,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="h-dvh mb-3">
+    <section id="about" className="h-dvh">
       <div className="max-w-5xl mx-auto px-5 lg:px-8">
         <div className="text-center p-9">
           <h2 className="text-3xl font-bold tracking-tight text-cyan-400 sm:text-4xl mb-3">

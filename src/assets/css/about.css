@@ -9,3 +9,10 @@
   word-wrap: break-word;
   word-spacing: normal; /* Controla o espaçamento entre as palavras */
 }
+
+
+@media (max-width: 768px) { 
+  #about {
+      height: 145vh;
+  }
+}

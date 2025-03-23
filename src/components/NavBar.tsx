@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
         <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
         <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
-        <li className="hover:underline cursor-pointer">{t("nav.projects")}</li>
+        <li className="hover:underline cursor-pointer"><a id="nav" href="#project">{t("nav.projects")}</a></li>
         <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
         <li>
           <button
@@ -42,7 +42,9 @@ const Navbar: React.FC = () => {
           <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
           <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
           <li className="hover:underline cursor-pointer">
+            <a id="nav" href="#project">
             {t("nav.projects")}
+            </a>
           </li>
           <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
 
