@@ -7,9 +7,8 @@
 
 #about-text p {
   word-wrap: break-word;
-  word-spacing: normal; /* Controla o espaçamento entre as palavras */
+  word-spacing: normal;
 }
-
 
 @media (max-width: 768px) { 
   #about {
