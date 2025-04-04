@@ -9,8 +9,8 @@ const About: React.FC = () => {
 
   const blocks = [
     {
-      title: "Programming Languages",
-      text: "I develop applications using versatile programming languages that ensure performance and scalability.",
+      title: t("programming_languages.title"),
+      text: t("programming_languages.text"),
       techs: [
         "java-plain.svg", // Java
         "csharp-plain.svg", // C#
@@ -20,8 +20,8 @@ const About: React.FC = () => {
       ],
     },
     {
-      title: "Frameworks & Libraries",
-      text: "I use modern frameworks and libraries to build interactive and efficient web applications.",
+      title: t("frameworks_libraries.title"),
+      text: t("frameworks_libraries.text"),
       techs: [
         "react-original.svg", // React
         "codeigniter-plain.svg", // CodeIgniter
@@ -29,8 +29,8 @@ const About: React.FC = () => {
       ],
     },
     {
-      title: "Tools & Styling",
-      text: "I utilize essential tools and styling technologies to enhance development and improve UI/UX.",
+      title: t("tools_styling.title"),
+      text: t("tools_styling.text"),
       techs: [
         "css3-plain.svg", // CSS3
         "html5-plain.svg", // HTML5
@@ -39,8 +39,8 @@ const About: React.FC = () => {
       ],
     },
     {
-      title: "Databases",
-      text: "I work with relational and NoSQL databases to efficiently store and manage data.",
+      title: t("databases.title"),
+      text: t("databases.text"),
       techs: [
         "mysql-original.svg", // MySQL
         "postgresql-plain.svg", // PostgreSQL
@@ -85,14 +85,13 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        {/* Bloco de Tecnologias */}
         <div className="space-y-12">
           <motion.div
             key={currentBlock}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.0 }}
           >
             <h3 className="text-2xl font-semibold text-cyan-400 text-center mb-8">
               Technologies I Know

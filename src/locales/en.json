@@ -20,5 +20,21 @@
     "technologies": "I work with technologies like PHP, JavaScript, TypeScript, C#, and Java, and I'm also improving my front-end skills with React.",
     "interests": "I have a strong interest in web development and databases.",
     "opportunity": "I am currently studying Systems Analysis and Development and am looking for an internship or junior developer position to apply my knowledge and grow professionally."
+  },
+  "programming_languages": {
+    "title": "Programming Languages",
+    "text": "I develop applications using versatile programming languages that ensure performance and scalability."
+  },
+  "frameworks_libraries": {
+    "title": "Frameworks & Libraries",
+    "text": "I use modern frameworks and libraries to build interactive and efficient web applications."
+  },
+  "tools_styling": {
+    "title": "Tools & Styling",
+    "text": "I utilize essential tools and styling technologies to enhance development and improve UI/UX."
+  },
+  "databases": {
+    "title": "Databases",
+    "text": "I work with relational and NoSQL databases to efficiently store and manage data."
   }
 }

@@ -20,5 +20,21 @@
     "technologies": "Trabalho com tecnologias como PHP, JavaScript, TypeScript, C# e Java, e também estou aprimorando minhas habilidades de front-end com React.",
     "interests": "Tenho um grande interesse em desenvolvimento web e bancos de dados.",
     "opportunity": "Atualmente estou estudando Análise e Desenvolvimento de Sistemas e estou procurando um estágio ou uma posição de desenvolvedor júnior para aplicar meu conhecimento e crescer profissionalmente."
+  },
+  "programming_languages": {
+    "title": "Linguagens de Programação",
+    "text": "Eu desenvolvo aplicações utilizando linguagens de programação versáteis que garantem desempenho e escalabilidade."
+  },
+  "frameworks_libraries": {
+    "title": "Frameworks e Bibliotecas",
+    "text": "Eu uso frameworks modernos e bibliotecas para construir aplicações web interativas e eficientes."
+  },
+  "tools_styling": {
+    "title": "Ferramentas e Estilos",
+    "text": "Eu utilizo ferramentas essenciais e tecnologias de estilo para aprimorar o desenvolvimento e melhorar a UI/UX."
+  },
+  "databases": {
+    "title": "Bancos de Dados",
+    "text": "Eu trabalho com bancos de dados relacionais e NoSQL para armazenar e gerenciar dados de forma eficiente."
   }
 }
