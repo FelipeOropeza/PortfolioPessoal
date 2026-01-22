@@ -16,6 +16,8 @@
   "about": {
     "greeting": "Olá! Eu sou",
     "name": "Felipe Oropeza",
+    "title": "Sobre Mim",
+    "title_tech": "Tecnologias que Conheço",
     "description": "um desenvolvedor apaixonado com experiência em desenvolvimento back-end e front-end.",
     "technologies": "Trabalho com tecnologias como PHP, JavaScript, TypeScript, C# e Java, e também estou aprimorando minhas habilidades de front-end com React.",
     "interests": "Tenho um grande interesse em desenvolvimento web e bancos de dados.",

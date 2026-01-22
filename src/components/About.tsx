@@ -61,7 +61,7 @@ const About: React.FC = () => {
       <div className="max-w-5xl mx-auto px-5 lg:px-8">
         <div className="text-center p-9">
           <h2 className="text-3xl font-bold tracking-tight text-cyan-400 sm:text-4xl mb-3">
-            About Me
+            {t("about.title")}{" "}
           </h2>
           <div className="w-20 h-1 bg-sky-500 mx-auto rounded-full mb-8"></div>
         </div>
@@ -94,7 +94,7 @@ const About: React.FC = () => {
             transition={{ duration: 1.0 }}
           >
             <h3 className="text-2xl font-semibold text-cyan-400 text-center mb-8">
-              Technologies I Know
+              {t("about.title_tech")}{" "}
             </h3>
 
             <h4 className="text-xl font-semibold text-white text-center mb-4">
