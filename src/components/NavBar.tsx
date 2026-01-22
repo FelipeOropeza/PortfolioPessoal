@@ -13,15 +13,23 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="text-white py-4 px-6 flex items-center justify-between">
+    <nav className="relative z-50 text-white py-4 px-6 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <span className="text-lg font-semibold">FELIPE OROPEZA</span>
       </div>
 
       <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
         <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-        <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
-        <li className="hover:underline cursor-pointer"><a id="nav" href="#project">{t("nav.projects")}</a></li>
+        <li className="hover:underline cursor-pointer">
+          <a className="nav-link" href="#about">
+            {t("nav.about")}
+          </a>
+        </li>
+        <li className="hover:underline cursor-pointer">
+          <a className="nav-link" href="#project">
+            {t("nav.projects")}
+          </a>
+        </li>
         <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
         <li>
           <button
@@ -38,12 +46,21 @@ const Navbar: React.FC = () => {
       </button>
 
       {isOpen && (
-        <ul className="absolute top-16 right-6 w-40 bg-gray-800 text-white text-sm font-medium flex flex-col gap-3 p-4 rounded-lg shadow-lg md:hidden">
+        <ul className="absolute top-full right-6 mt-2 w-44 bg-gray-800 text-white text-sm font-medium flex flex-col gap-3 p-4 rounded-lg shadow-lg md:hidden">
           <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-          <li className="hover:underline cursor-pointer"><a id="nav" href="#about">{t("nav.about")}</a></li>
           <li className="hover:underline cursor-pointer">
-            <a id="nav" href="#project">
-            {t("nav.projects")}
+            <a
+              className="nav-link"
+              href="#about"
+              onClick={() => setIsOpen(false)}
+            >
+              {t("nav.about")}
+            </a>
+          </li>
+
+          <li className="hover:underline cursor-pointer">
+            <a className="nav-link" href="#project">
+              {t("nav.projects")}
             </a>
           </li>
           <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>

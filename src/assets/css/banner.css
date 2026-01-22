@@ -1,9 +1,5 @@
 #banner {
-    height: 85vh; /* Altura inicial */
-}
-
-@media (max-width: 768px) { 
-    #banner {
-        height: 45vh;
-    }
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }

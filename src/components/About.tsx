@@ -57,7 +57,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="h-dvh">
+    <section id="about" className="min-h-screen py-16">
       <div className="max-w-5xl mx-auto px-5 lg:px-8">
         <div className="text-center p-9">
           <h2 className="text-3xl font-bold tracking-tight text-cyan-400 sm:text-4xl mb-3">
@@ -68,7 +68,7 @@ const About: React.FC = () => {
 
         <div
           id="about-text"
-          className="space-y-6 mb-16 text-left md:text-justify"
+          className="space-y-6 mb-16 text-left md:text-justify px-2 sm:px-0"
         >
           <p className="text-lg leading-relaxed text-white">
             {t("about.greeting")}{" "}
@@ -109,12 +109,12 @@ const About: React.FC = () => {
               {blocks[currentBlock].techs.map((tech, index) => (
                 <div
                   key={index}
-                  className="tech-item flex justify-center items-center w-1/3 sm:w-1/4 md:w-1/5 lg:w-auto"
+                  className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24"
                 >
                   <img
                     src={`images/${tech}`}
                     alt={tech}
-                    className="w-20 h-20 object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               ))}

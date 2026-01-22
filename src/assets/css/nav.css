@@ -1,34 +1,30 @@
-/* Scroll suave para toda a página */
 html {
   scroll-behavior: smooth;
 }
 
-/* Estilização e transição para links no nav */
-#nav a {
+.nav-link {
   position: relative;
-  color: #333;
+  color: #e5e7eb; /* text-gray-200 */
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0;
   transition: color 0.3s ease;
 }
 
-/* Efeito hover */
-#nav a:hover {
-  color: #3b82f6; /* Cor azul do Tailwind */
+.nav-link:hover {
+  color: #3b82f6;
 }
 
-/* Efeito de linha animada abaixo do link */
-#nav a::after {
-  content: '';
+.nav-link::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   background-color: #3b82f6;
   transition: width 0.3s ease;
 }
 
-#nav a:hover::after {
+.nav-link:hover::after {
   width: 100%;
 }
