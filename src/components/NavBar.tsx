@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="relative z-50 text-white py-4 px-6 flex items-center justify-between">
+    <nav className="relative z-50 text-white py-4 px-6 flex items-center justify-between max-w-7xl mx-auto">
       <div className="flex items-center gap-3">
         <span className="text-lg font-semibold">FELIPE OROPEZA</span>
       </div>
@@ -47,11 +47,11 @@ const Navbar: React.FC = () => {
       </button>
 
       {isOpen && (
-        <ul className="absolute top-full right-6 mt-2 w-44 bg-gray-800 text-white text-sm font-medium flex flex-col gap-3 p-4 rounded-lg shadow-lg md:hidden">
-          <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
+        <ul className="absolute top-full right-6 mt-2 w-48 bg-gray-800 text-white text-sm font-medium flex flex-col gap-2 p-4 rounded-lg shadow-lg md:hidden">
+          <li className="hover:underline cursor-pointer block py-2">{t("nav.home")}</li>
           <li className="group relative cursor-pointer">
             <a
-              className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500"
+              className="block py-2 text-gray-200 transition-colors duration-300 hover:text-blue-500"
               href="#about"
               onClick={() => setIsOpen(false)}
             >
@@ -61,19 +61,19 @@ const Navbar: React.FC = () => {
           </li>
 
           <li className="group relative cursor-pointer">
-            <a className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500" href="#project">
+            <a className="block py-2 text-gray-200 transition-colors duration-300 hover:text-blue-500" href="#project">
               {t("nav.projects")}
               <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
-          <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
+          <li className="hover:underline cursor-pointer block py-2">{t("nav.contact")}</li>
 
           <li>
             <button
               onClick={toggleLanguage}
-              className="flex items-center justify-center w-full py-2 mt-2 bg-gray-700 rounded-lg"
+              className="flex items-center justify-center w-full py-3 mt-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
             >
-              {i18n.language === "en" ? "🇺🇸" : "🇧🇷"}
+              {i18n.language === "en" ? "🇺🇸 English" : "🇧🇷 Português"}
             </button>
           </li>
         </ul>

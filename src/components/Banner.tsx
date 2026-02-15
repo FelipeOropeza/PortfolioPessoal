@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
   return (
     <section
       id="banner"
-      className="min-h-screen py-16 flex flex-col md:flex-row items-center justify-center text-white px-4 sm:px-6 md:px-10"
+      className="min-h-screen py-16 flex flex-col-reverse md:flex-row items-center justify-center text-white px-4 sm:px-6 md:px-10 max-w-7xl mx-auto"
     >
       <div className="w-full md:w-2/3 text-center md:text-left">
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">
@@ -22,10 +22,10 @@ const Banner: React.FC = () => {
       </div>
 
       <div
-        className="hidden md:flex w-[280px] lg:w-[380px] aspect-square rounded-full overflow-hidden border-4 border-cyan-400 mt-10 md:mt-0 transition-all duration-300"
+        className="flex w-40 h-40 md:w-[280px] lg:w-[380px] aspect-square rounded-full overflow-hidden border-4 border-cyan-400 mb-8 md:mb-0 md:mt-0 transition-all duration-300"
       >
         <img
-          src={"PortfolioPessoal/images/FelipeCarvalho.jpeg"}
+          src={"images/FelipeCarvalho.jpeg"}
           alt="Felipe Oropeza"
           className="w-full h-full object-cover"
         />

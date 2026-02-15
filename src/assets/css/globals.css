@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "JetBrains Mono", monospace;
   background-color: #1d1a1a;

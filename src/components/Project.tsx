@@ -3,7 +3,7 @@ import { projects } from "../data/projects";
 
 const Project: React.FC = () => {
   return (
-    <section id="project" className="px-4 sm:px-6 md:px-10 py-16 min-h-screen">
+    <section id="project" className="px-4 sm:px-6 md:px-10 py-16 min-h-screen max-w-7xl mx-auto">
       <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-300 mb-10 text-center">
         My Projects
       </h2>

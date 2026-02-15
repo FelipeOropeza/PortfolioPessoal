@@ -70,7 +70,7 @@ const About: React.FC = () => {
                   className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24"
                 >
                   <img
-                    src={`PortfolioPessoal/images/${tech}`}
+                    src={`images/${tech}`}
                     alt={tech}
                     className="w-full h-full object-contain"
                   />
