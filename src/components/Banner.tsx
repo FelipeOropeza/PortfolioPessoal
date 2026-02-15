@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "../assets/css/banner.css";
 
 const Banner: React.FC = () => {
   const { t } = useTranslation();
@@ -8,7 +7,7 @@ const Banner: React.FC = () => {
   return (
     <section
       id="banner"
-      className="flex flex-col md:flex-row items-center justify-center text-white px-4 sm:px-6 md:px-10"
+      className="min-h-screen py-16 flex flex-col md:flex-row items-center justify-center text-white px-4 sm:px-6 md:px-10"
     >
       <div className="w-full md:w-2/3 text-center md:text-left">
         <h3 className="text-sm sm:text-base text-gray-400 mb-4">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import "../assets/css/nav.css";
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -20,14 +19,16 @@ const Navbar: React.FC = () => {
 
       <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
         <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-        <li className="hover:underline cursor-pointer">
-          <a className="nav-link" href="#about">
+        <li className="group relative cursor-pointer">
+          <a className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500" href="#about">
             {t("nav.about")}
+            <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </li>
-        <li className="hover:underline cursor-pointer">
-          <a className="nav-link" href="#project">
+        <li className="group relative cursor-pointer">
+          <a className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500" href="#project">
             {t("nav.projects")}
+            <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </li>
         <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>
@@ -48,19 +49,21 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <ul className="absolute top-full right-6 mt-2 w-44 bg-gray-800 text-white text-sm font-medium flex flex-col gap-3 p-4 rounded-lg shadow-lg md:hidden">
           <li className="hover:underline cursor-pointer">{t("nav.home")}</li>
-          <li className="hover:underline cursor-pointer">
+          <li className="group relative cursor-pointer">
             <a
-              className="nav-link"
+              className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500"
               href="#about"
               onClick={() => setIsOpen(false)}
             >
               {t("nav.about")}
+              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
 
-          <li className="hover:underline cursor-pointer">
-            <a className="nav-link" href="#project">
+          <li className="group relative cursor-pointer">
+            <a className="block py-1 text-gray-200 transition-colors duration-300 hover:text-blue-500" href="#project">
               {t("nav.projects")}
+              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
           <li className="hover:underline cursor-pointer">{t("nav.contact")}</li>

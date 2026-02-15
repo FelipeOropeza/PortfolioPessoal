@@ -1,57 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import "../assets/css/about.css";
+import { aboutBlocks } from "../data/about";
 
 const About: React.FC = () => {
   const [currentBlock, setCurrentBlock] = useState(0);
   const { t } = useTranslation();
 
-  const blocks = [
-    {
-      title: t("programming_languages.title"),
-      text: t("programming_languages.text"),
-      techs: [
-        "java-plain.svg", // Java
-        "csharp-plain.svg", // C#
-        "php-original.svg", // PHP
-        "javascript-plain.svg", // JavaScript
-        "typescript-plain.svg", // TypeScript
-      ],
-    },
-    {
-      title: t("frameworks_libraries.title"),
-      text: t("frameworks_libraries.text"),
-      techs: [
-        "react-original.svg", // React
-        "codeigniter-plain.svg", // CodeIgniter
-        "nodejs-plain.svg", // Node.js
-      ],
-    },
-    {
-      title: t("tools_styling.title"),
-      text: t("tools_styling.text"),
-      techs: [
-        "css3-plain.svg", // CSS3
-        "html5-plain.svg", // HTML5
-        "composer-original.svg", // Composer
-        "npm-original-wordmark.svg", // npm
-      ],
-    },
-    {
-      title: t("databases.title"),
-      text: t("databases.text"),
-      techs: [
-        "mysql-original.svg", // MySQL
-        "postgresql-plain.svg", // PostgreSQL
-        "mongodb-plain-wordmark.svg", // MongoDB
-      ],
-    },
-  ];
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBlock((prev) => (prev + 1) % blocks.length);
+      setCurrentBlock((prev) => (prev + 1) % aboutBlocks.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -68,7 +26,7 @@ const About: React.FC = () => {
 
         <div
           id="about-text"
-          className="space-y-6 mb-16 text-left md:text-justify px-2 sm:px-0"
+          className="space-y-6 mb-16 text-left md:text-justify px-2 sm:px-0 break-words whitespace-normal"
         >
           <p className="text-lg leading-relaxed text-white">
             {t("about.greeting")}{" "}
@@ -98,15 +56,15 @@ const About: React.FC = () => {
             </h3>
 
             <h4 className="text-xl font-semibold text-white text-center mb-4">
-              {blocks[currentBlock].title}
+              {t(aboutBlocks[currentBlock].titleKey)}
             </h4>
 
             <p className="text-lg leading-relaxed text-white text-center mb-6">
-              {blocks[currentBlock].text}
+              {t(aboutBlocks[currentBlock].textKey)}
             </p>
 
             <div className="flex flex-wrap justify-center items-center gap-4">
-              {blocks[currentBlock].techs.map((tech, index) => (
+              {aboutBlocks[currentBlock].techs.map((tech, index) => (
                 <div
                   key={index}
                   className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24"
