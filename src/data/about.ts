@@ -9,7 +9,7 @@ export const aboutBlocks: AboutBlock[] = [
       "https://cdn.simpleicons.org/typescript/3178C6",
       "https://cdn.simpleicons.org/javascript/F7DF1E",
       "https://cdn.simpleicons.org/openjdk/FF0000",
-      "https://cdn.simpleicons.org/csharp/239120",
+      "csharp-plain.svg",
     ],
   },
   {
@@ -30,7 +30,7 @@ export const aboutBlocks: AboutBlock[] = [
     textKey: "tools_styling.text",
     techs: [
       "https://cdn.simpleicons.org/tailwindcss/06B6D4",
-      "https://cdn.simpleicons.org/css3/1572B6",
+      "https://cdn.simpleicons.org/css/1572B6",
       "https://cdn.simpleicons.org/html5/E34F26",
       "https://cdn.simpleicons.org/git/F05032",
       "https://cdn.simpleicons.org/docker/2496ED",
