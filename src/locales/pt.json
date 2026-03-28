@@ -11,7 +11,7 @@
   "banner": {
     "greeting": "OLÁ, EU SOU FELIPE OROPEZA",
     "title": "Este é o meu portfólio pessoal",
-    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre buscando novos desafios e oportunidades para aprender no mundo do desenvolvimento de software.",
+    "description": "Desenvolvedor focado no ecossistema Laravel (TALL Stack) e React. Especialista em criar aplicações fullstack robustas, performáticas e com design futurista.",
     "btn_projects": "INICIAR_PROJETOS()",
     "btn_about": "VER_INFO_SISTEMA"
   },
@@ -20,8 +20,8 @@
     "name": "Felipe Oropeza",
     "title": "Sobre Mim",
     "title_tech": "Tecnologias que Conheço",
-    "description": "um desenvolvedor apaixonado com experiência em desenvolvimento back-end e front-end.",
-    "technologies": "Trabalho com tecnologias como PHP, JavaScript, TypeScript, C# e Java, e também estou aprimorando minhas habilidades de front-end com React.",
+    "description": "um desenvolvedor apaixonado com foco em soluções Fullstack modernas.",
+    "technologies": "Minha stack principal hoje gira em torno de Laravel, Livewire, Alpine.js e Tailwind CSS (TALL Stack), além de criar interfaces interativas com React, Vue.js e TypeScript. Também possuo experiência consolidada com CodeIgniter.",
     "interests": "Tenho um grande interesse em desenvolvimento web e bancos de dados.",
     "opportunity": "Atualmente estou estudando Análise e Desenvolvimento de Sistemas e estou procurando um estágio ou uma posição de desenvolvedor júnior para aplicar meu conhecimento e crescer profissionalmente."
   },

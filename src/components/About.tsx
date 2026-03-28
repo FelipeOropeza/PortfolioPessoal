@@ -106,7 +106,7 @@ const About: React.FC = () => {
                       className="p-2 sm:p-3 bg-white/5 rounded-xl border border-white/10 transition-colors cursor-pointer group/tech"
                     >
                       <img
-                        src={`images/${tech}`}
+                        src={tech.startsWith('http') ? tech : `images/${tech}`}
                         alt={tech}
                         className="w-8 h-8 sm:w-10 sm:h-10 object-contain filter drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]"
                       />
