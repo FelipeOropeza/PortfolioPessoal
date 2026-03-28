@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
 
   const socialLinks = [
     { name: "GitHub", icon: <Github size={24} />, url: "https://github.com/FelipeOropeza", color: "hover:text-white" },
-    { name: "LinkedIn", icon: <Linkedin size={24} />, url: "#", color: "hover:text-blue-400" },
+    { name: "LinkedIn", icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/felipeoropeza", color: "hover:text-blue-400" },
     { name: "Email", icon: <Mail size={24} />, url: `mailto:${email}`, color: "hover:text-cyan-400", isEmail: true }
   ];
 

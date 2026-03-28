@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Github, Globe } from "lucide-react";
+import { Menu, X, Github, Globe, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -123,7 +123,12 @@ const Navbar: React.FC = () => {
               <div className="flex justify-between mt-4">
                 <span className="text-xs text-gray-500 uppercase tracking-widest">Connect_Now</span>
                 <div className="flex gap-4">
-                  <Github size={20} className="text-gray-400 hover:text-white" />
+                  <a href="https://github.com/FelipeOropeza" target="_blank" rel="noopener noreferrer">
+                    <Github size={20} className="text-gray-400 hover:text-white transition-colors" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/felipeoropeza" target="_blank" rel="noopener noreferrer">
+                    <Linkedin size={20} className="text-gray-400 hover:text-blue-400 transition-colors" />
+                  </a>
                 </div>
               </div>
             </motion.div>
