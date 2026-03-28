@@ -11,7 +11,9 @@
   "banner": {
     "greeting": "OLÁ, EU SOU FELIPE OROPEZA",
     "title": "Este é o meu portfólio pessoal",
-    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre buscando novos desafios e oportunidades para aprender no mundo do desenvolvimento de software."
+    "description": "Sou estudante e desenvolvedor front-end e back-end. Estou sempre buscando novos desafios e oportunidades para aprender no mundo do desenvolvimento de software.",
+    "btn_projects": "INICIAR_PROJETOS()",
+    "btn_about": "VER_INFO_SISTEMA"
   },
   "about": {
     "greeting": "Olá! Eu sou",
@@ -38,5 +40,15 @@
   "databases": {
     "title": "Bancos de Dados",
     "text": "Eu trabalho com bancos de dados relacionais e NoSQL para armazenar e gerenciar dados de forma eficiente."
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Interessado em colaborar em novos projetos ou apenas trocar uma ideia sobre tecnologia? O canal está aberto.",
+    "direct_comm": "COMUNICAÇÃO_DIRETA",
+    "ready_title": "Pronto para Construir?",
+    "ready_text": "Clique abaixo para me enviar um e-mail direto. Eu respondo geralmente em menos de 24 ciclos horários.",
+    "status": "Status: Disponível para Novas Missões",
+    "footer_rights": "© 2026 FELIPE_OROPEZA_SYSTEM // TODOS_OS_DIREITOS_RESERVADOS",
+    "footer_built": "CONSTRUÍDO_COM_REACT & CYBER_GLOW"
   }
 }

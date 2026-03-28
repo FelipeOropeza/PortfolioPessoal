@@ -6,9 +6,13 @@ export type Language = {
 export type Project = {
   id: number;
   name: string;
-  description: string;
+  description_pt: string;
+  description_en: string;
   imageUrl: string;
+  githubUrl: string;
   languages: Language[];
+  stars?: number;
+  forks?: number;
 };
 
 export type AboutBlock = {
